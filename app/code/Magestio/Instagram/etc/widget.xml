@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="magestio_instagram_block" class="Magestio\Instagram\Block\Instagram">
+        <label translate="true">Magestio Instagram Block</label>
+        <description>Magestio Instagram Block</description>
+        <parameters>
+            <parameter name="title" xsi:type="text" required="false" visible="true">
+                <label translate="true">Title</label>
+            </parameter>
+			<parameter name="accountIg" xsi:type="text" required="false" visible="true">
+                <label translate="true">Account Instagram @youraccount</label>
+            </parameter>
+			<parameter name="accountIgLink" xsi:type="text" required="false" visible="true">
+                <label translate="true">Account Instagram Link https://www.instagram.com/caminoacasa/</label>
+            </parameter>
+			<parameter name="template" xsi:type="select" required="true" visible="true">
+                <label translate="true">Template</label>
+                <options>
+                    <option name="default" value="Magestio_Instagram::widgets/instagram.phtml" selected="true">
+                        <label translate="true">Instagram Template</label>
+                    </option>
+                </options>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

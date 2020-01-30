@@ -1,0 +1,76 @@
+.letter-spacing(@target) {
+    letter-spacing: (@target / 1000) * 1em;
+}
+
+& when (@media-common =true) {
+    .instagram-wrapper {
+        .title {
+            h2 {}
+        }
+
+        .sub-title {
+            text-align: center;
+
+            a {}
+		}
+		.owl-carousel{
+			.owl-nav {
+                position: absolute;
+				top: 50%;
+				em{
+					.lib-font-size(2rem)
+				}
+                .owl-prev {
+					left: 0;
+                }
+                .owl-next {
+                    right: 0;
+                }
+            }
+		}
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum ='max') and (@break =@screen__m) {
+    .instagram-wrapper {
+        .title {
+
+            h2 {}
+        }
+
+        .sub-title {
+
+            a {}
+        }
+
+        .owl-carousel {
+            .owl-item {
+                .item {
+                    max-width: 320px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum ='min') and (@break =@screen__m) {
+    .instagram-wrapper {
+
+        .title {
+            h2 {}
+        }
+
+        .sub-title {
+            a {}
+        }
+    }
+}

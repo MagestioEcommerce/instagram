@@ -1,0 +1,18 @@
+<?php if ($block->enabled()): ?>
+<div class="instagram-footer" data-role="instagram-caroussel">
+    <div class="instagram-footer-wrapper">
+        <div class="container">
+            <div class="title">
+                <h2><?php echo __('We are on Instagram') ?></h2>
+            </div>
+			<div id="instagram-photos" class="owl-carousel owl-theme">
+    </div>
+</div>
+<script type="text/x-magento-init">
+    {
+        "[data-role=instagram-caroussel]": {
+            "instagramCaroussel": {}
+        }
+    }
+</script>
+<?php endif; ?>

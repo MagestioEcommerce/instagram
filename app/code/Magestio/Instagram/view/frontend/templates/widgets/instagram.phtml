@@ -1,0 +1,23 @@
+<?php if ($block->enabled()) : ?>
+
+	<div class="instagram-footer container" data-role="instagram-caroussel">
+		<div class="instagram-wrapper special-titles">
+			<div class="title">
+				<h2><?php echo $this->getTitle() ?></h2>
+			</div>
+			<div class="sub-title">
+				<a target="_blank" href="<?php echo $this->getData("accountIgLink") ?>"><span><?php echo $this->getData("accountIg") ?></span></a>
+			</div>
+			<div class="separator"></div>
+			<div id="instagram-photos" class="owl-carousel owl-theme">
+			</div>
+		</div>
+	</div>
+	<script type="text/x-magento-init">
+		{
+			"[data-role=instagram-caroussel]": {
+				"instagramCaroussel": {}
+			}
+		}
+	</script>
+<?php endif; ?>

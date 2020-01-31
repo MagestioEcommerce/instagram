@@ -28,3 +28,4 @@ php bin/magento setup:static-content:deploy
 ### Technical support
 
 * Web: [https://magestio.com/](https://magestio.com/)
+
